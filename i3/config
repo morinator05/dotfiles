@@ -141,6 +141,14 @@ workspace $ws8 output $monitor_one
 workspace $ws9 output $monitor_one
 workspace $ws10 output $monitor_two
 
+#bind application to ws
+assign [class="kitty"] $ws1
+assign [class="firefox"] $ws2
+assign [class="thunar"] $ws2
+assign [class="idea"] $ws4
+assign [class="code"] $ws4
+assign [class="discord"] $ws5
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -201,6 +209,7 @@ bindsym $mod+r mode "resize"
 
 #always exec
 exec_always ~/.config/polybar/launch.sh
+exec_always feh --bg-scale ~/wallpaper/wall.jpg
 
 #remove border and add gap
 default_border pixel 0
