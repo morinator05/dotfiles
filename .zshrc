@@ -2,8 +2,6 @@ autoload -U promptinit compinit
 compinit
 promptinit
 
-fpath=(~/.config/zsh/zsh-completions/src $fpath)
-
 #prompt
 prompt walters
 
